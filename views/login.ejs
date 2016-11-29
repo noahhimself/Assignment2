@@ -7,9 +7,11 @@
 <% include partials/header.ejs %>
 
 <h1>Login</h1>
+
 <% if (messages.length > 0) { %>
 <div class="invalidInput">Invalid Login</div>
 <% } %>
+
 <form method="post">
   <div class="form-group">
     <label for="username">Username:*</label>
@@ -17,11 +19,11 @@
   </div>
   <div class="form-group">
     <label for="password">Password:*</label>
-    <input name="password" id="password" required />
+    <input name="password" id="password" type="password" required />
   </div>
   <button class="loginButton">Login</button>
-  <hr /> Need access?
-  <a href="/register" title="Register">Register</a>
+  <center> <hr /> Need access?
+  <a href="/register" title="Register">Register</a></center>
 </form>
 
 <% include partials/footer.ejs %>

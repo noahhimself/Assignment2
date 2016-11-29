@@ -54,7 +54,8 @@ router.post('/add', isLoggedIn, function(req, res, next) {
     Budget.create( {
         itemPurchased: req.body.itemPurchased,
         quantityPurchased: req.body.quantityPurchased,
-        price: req.body.price
+        price: req.body.price,
+        currency: req.body.currency
     }, function(err, budgetManager) {
         if (err) {
             console.log(err);
@@ -120,9 +121,11 @@ router.post('/:_id', isLoggedIn, function(req, res, next) {
 
     // Instantiate and populates a new budget object
     var budget = new Budget({
+        _id: _id,
         itemPurchased: req.body.itemPurchased,
         quantityPurchased: req.body.quantityPurchased,
-        price: req.body.price
+        price: req.body.price,
+        currency: req.body.currency
     });
 
     // Update the budget
@@ -140,5 +143,5 @@ router.post('/:_id', isLoggedIn, function(req, res, next) {
     });
 });
 
-// Make public
+// Make this file public
 module.exports = router;

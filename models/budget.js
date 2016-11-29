@@ -11,15 +11,19 @@ var mongoose = require('mongoose');
 var budgetSchema = new mongoose.Schema({
     itemPurchased: {
         type: String,
-        required: 'Please enter the item purchased'
+        required: 'Please enter the item purchased!'
     },
     quantityPurchased: {
         type: Number,
-        required: 'Please choose a quantity'
+        required: 'Please choose a quantity!'
     },
     price: {
         type: Number,
-        required: 'Please enter the price'
+        required: 'Please enter the price!'
+    },
+    currency: {
+        type: String,
+        required: 'Please select the currency!'
     }
 });
 

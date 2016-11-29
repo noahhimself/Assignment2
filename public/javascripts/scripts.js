@@ -8,7 +8,7 @@ $('.confirmation').on('click', function() {
     return confirm('Are you sure you want to delete this purchase?');
 });
 
-// Validates the password
+// Validates the password while the user is entering the password under confirm
 var validator = $ ('#registerForm').validate({
     rules: {
         confirm: {

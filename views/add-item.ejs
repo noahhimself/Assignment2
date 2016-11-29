@@ -5,26 +5,26 @@
 -->
 
 <% include partials/header.ejs %>
-<h1>Purchase Details</h1>
+<h1>Add Purchase</h1>
 
 <form method="post">
   <div class="form-group">
-    <label for="itemPurchased">Item:</label>
+    <label for="itemPurchased">Item:*</label>
     <input name="itemPurchased" id="itemPurchased" required />
   </div>
   <div class="form-group">
-    <label for="quantityPurchased">Quantity:</label>
-    <select name="quantityPurchased" id="quantityPurchased">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-    </select>
+    <label for="quantityPurchased">Quantity:*</label>
+    <input name="quantityPurchased" id="quantityPurchased" required type="number" min="0" />
   </div>
   <div class="form-group">
-    <label for="price">Price:</label>
+    <label for="price">Price:*</label>
     <input name="price" id="price" required type="number" min="0" />
+    <select name="currency" id="currency">
+      <option>CAD</option>
+      <option>USD</option>
+    </select>
   </div>
-  <button>Save</button>
+  <button class="saveButton">Save</button>
 </form>
 
 <% include partials/footer.ejs %>

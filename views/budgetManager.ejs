@@ -7,7 +7,7 @@
 <% include partials/header.ejs %>
 
 <h1><%= title %></h1>
-<a href="/budgetManager/add">Add an Item</a>
+<button class="addButton" onclick="window.location.href='/budgetManager/add'">Add an Item</button>
 <table>
   <tr>
     <th>Item</th>
@@ -20,7 +20,7 @@
   <tr>
     <td><%= budgetManager[i].itemPurchased %></td>
     <td><%= budgetManager[i].quantityPurchased %></td>
-    <td><%= budgetManager[i].price %></td>
+    <td><%= budgetManager[i].price %> <%= budgetManager[i].currency %></td>
     <td><a href="/budgetManager/<%= budgetManager[i]._id %>">Edit</a></td>
     <td><a href="/budgetManager/delete/<%= budgetManager[i]._id %>" class="confirmation">Delete</a></td>
   </tr>
