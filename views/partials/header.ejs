@@ -1,0 +1,28 @@
+<!--  File name : header
+      Author's name : Noah Michael
+      Website name : Budget Manager
+      File description : This file contains the header and is common for all pages and is a .ejs type
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/stylesheets/myStyle.css" type="text/css"/>
+  </head>
+<body>
+<nav class="navbar navbar-brand">
+  <ul class="nav navbar-nav">
+    <li><a href="/">Home</a></li>
+
+    <% if (!user) { %>
+      <li><a href="/register">Register</a></li>
+      <li><a href="/login">Login</a></li>
+    <% }
+      else {
+    %>
+      <li><a href="/budgetManager">Budget</a></li>
+      <li><a href="/logout">Logout</a></li>
+    <% } %>
+  </ul>
+</nav>

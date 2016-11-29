@@ -1,0 +1,27 @@
+<!--  File name : login
+      Author's name : Noah Michael
+      Website name : Budget Manager
+      File description : This page contains the login screen and is a .ejs type
+-->
+
+<% include partials/header.ejs %>
+
+<h1>Login</h1>
+<% if (messages.length > 0) { %>
+<div class="invalidInput">Invalid Login</div>
+<% } %>
+<form method="post">
+  <div class="form-group">
+    <label for="username">Username:*</label>
+    <input name="username" id="username" required />
+  </div>
+  <div class="form-group">
+    <label for="password">Password:*</label>
+    <input name="password" id="password" required />
+  </div>
+  <button class="loginButton">Login</button>
+  <hr /> Need access?
+  <a href="/register" title="Register">Register</a>
+</form>
+
+<% include partials/footer.ejs %>

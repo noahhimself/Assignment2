@@ -1,0 +1,30 @@
+<!--  File name : add-item
+      Author's name : Noah Michael
+      Website name : Budget Manager
+      File description : This page allows the user to add a purchase and is a .ejs type
+-->
+
+<% include partials/header.ejs %>
+<h1>Purchase Details</h1>
+
+<form method="post">
+  <div class="form-group">
+    <label for="itemPurchased">Item:</label>
+    <input name="itemPurchased" id="itemPurchased" required />
+  </div>
+  <div class="form-group">
+    <label for="quantityPurchased">Quantity:</label>
+    <select name="quantityPurchased" id="quantityPurchased">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="price">Price:</label>
+    <input name="price" id="price" required type="number" min="0" />
+  </div>
+  <button>Save</button>
+</form>
+
+<% include partials/footer.ejs %>

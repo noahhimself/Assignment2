@@ -1,0 +1,138 @@
+/*  File name : myStyle
+    Author's name : Noah Michael
+    Website name : Budget Manager
+    File description : This page contains the styling for all the files and pages and is a .css type
+ */
+
+html
+{
+    background-color: whitesmoke;
+}
+
+body
+{
+    margin-left: 7.4%;
+    padding-top: 30px;
+    padding-bottom: 520px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1000px;
+    max-height: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 160%;
+    background-color: white;
+}
+
+/* Styling all the headers and the classes defined under header and paragraph */
+h1
+{
+    text-align: center;
+}
+
+.homeH1
+{
+    padding-top: 15%;
+}
+
+h2
+{
+    margin-left: 10%;
+    line-height: 520%;
+}
+
+h3
+{
+    text-align: center;
+}
+
+h4
+{
+    padding-top: 15%;
+    text-align: center;
+}
+
+p
+{
+    text-align: center;
+}
+
+section
+{
+    text-align: center;
+}
+
+/* Unordered list styling */
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-family: "Avenir Next";
+    font-size: 20px;
+}
+
+ul li
+{
+    flex-grow: 1;
+    position: relative;
+    background-color: #333;
+}
+
+ul li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 27px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+ul li a:hover
+{
+    background-color: black;
+}
+
+/* Footer styling */
+footer
+{
+    position: absolute;
+    bottom: 1.9%;
+    width: 78.2%;
+    height:30px;
+    color: black;
+}
+
+.form-group
+{
+    columns: 80px;
+    line-height: 300%;
+}
+
+.registerButton, .loginButton
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 73px;
+    cursor: pointer;
+}
+
+.invalidInput
+{
+    padding: 4px;
+    background-color: #ffcccc;
+    color: #990000;
+    border: 1px solid #ffb3b3;
+    border-radius: 8px;
+}

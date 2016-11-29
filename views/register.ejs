@@ -1,0 +1,29 @@
+<!--  File name : register
+      Author's name : Noah Michael
+      Website name : Budget Manager
+      File description : This page contains the register screen and is a .ejs type
+-->
+
+<% include partials/header.ejs %>
+
+<h1>Register</h1>
+  <form method="post" id="registerForm">
+    <div class="form-group">
+    <label for="username">Username:*</label>
+    <input name="username" id="username" required />
+      </div>
+      <div class="form-group">
+    <label for="passowrd">Password:*</label>
+    <input name="password" id="password" type="password" required />
+    </div>
+    <div class="form-group">
+    <label for="confirm">Confirm:*</label>
+    <input name="confirm" id="confirm" type="password" required />
+    </div>
+
+    <button class="registerButton">Register</button>
+    <hr /> Already have an account?
+    <a href="/login" title="Login">Login</a>
+  </form>
+
+<% include partials/footer.ejs %>

@@ -1,0 +1,30 @@
+<!--  File name : budgetManager
+      Author's name : Noah Michael
+      Website name : Budget Manager
+      File description : This page contains the current items purchased and is a .ejs type
+-->
+
+<% include partials/header.ejs %>
+
+<h1><%= title %></h1>
+<a href="/budgetManager/add">Add an Item</a>
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <% for (var i = 0; i < budgetManager.length; i++) { %>
+  <tr>
+    <td><%= budgetManager[i].itemPurchased %></td>
+    <td><%= budgetManager[i].quantityPurchased %></td>
+    <td><%= budgetManager[i].price %></td>
+    <td><a href="/budgetManager/<%= budgetManager[i]._id %>">Edit</a></td>
+    <td><a href="/budgetManager/delete/<%= budgetManager[i]._id %>" class="confirmation">Delete</a></td>
+  </tr>
+  <% } %>
+</table>
+
+<% include partials/footer.ejs %>
