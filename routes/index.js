@@ -62,7 +62,7 @@ router.get('/login', function(req, res, next) {
 });
 
 /* POST the login page */
-router.post('/login', passport.authenticate('local',{
+router.post('/login', passport.authenticate('local', {
   successRedirect: '/',
   failureRedirect: '/login',
   failureMessage: 'Invalid Login',
@@ -74,6 +74,17 @@ router.get('/logout', function(req, res, next){
   // Log the user out and redirect to the home page
   req.logout();
   res.redirect('/');
+});
+
+/* GET /facebook */
+router.get('/facebook', passport.authenticate('facebook'), function(req, res, next){});
+
+/* GET /facebook/callback */
+router.get('/facebook/callback', passport.authenticate('facebook', {
+  failureRedirect: '/login',
+  failureMessage: 'Invalid Login',
+}), function(req, res, next) {
+  res.redirect('/budgetManager');
 });
 
 // Make this file public

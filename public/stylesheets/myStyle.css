@@ -75,7 +75,10 @@ th, td
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
 
 th
 {
@@ -129,10 +132,10 @@ footer
     color: black;
 }
 
-.form-group
+.lbl
 {
-    columns: 128px;
-    line-height: 300%;
+    width: 12%;
+    float: left;
 }
 
 .registerButton, .loginButton, .saveButton
@@ -151,7 +154,7 @@ footer
 
 .addButton
 {
-    background-color: #FF6347	;
+    background-color: #FF6347;
     border: none;
     color: white;
     padding: 8px 32px;

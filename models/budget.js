@@ -7,7 +7,7 @@
 // Link to mongoose
 var mongoose = require('mongoose');
 
-// Defining a schema for the Budget model which allows this and all other models inherit from mongoose.Schema
+// Defining a schema for the Budget model which allows this and all other models to inherit from mongoose.Schema
 var budgetSchema = new mongoose.Schema({
     itemPurchased: {
         type: String,

@@ -11,7 +11,7 @@ var router = express.Router();
 var Budget = require('../models/budget');
 
 // Authentication for when a user is logged in
-function isLoggedIn(req, res,next) {
+function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
         next();
     }
@@ -49,9 +49,8 @@ router.get('/add', isLoggedIn, function(req, res, next) {
 
 /* POST /budgetManager/add - Processes the form submission */
 router.post('/add', isLoggedIn, function(req, res, next) {
-
     // Gets the form inputs and uses mongoose to insert to the database
-    Budget.create( {
+    Budget.create({
         itemPurchased: req.body.itemPurchased,
         quantityPurchased: req.body.quantityPurchased,
         price: req.body.price,
@@ -69,7 +68,6 @@ router.post('/add', isLoggedIn, function(req, res, next) {
 
 /* GET /budgetManager/delete/_id - Processes delete */
 router.get('/delete/:_id', isLoggedIn, function(req, res, next) {
-
     // Gets the ID from the URL
     var _id = req.params._id;
 
@@ -78,7 +76,7 @@ router.get('/delete/:_id', isLoggedIn, function(req, res, next) {
         if (err) {
             console.log(err);
             res.render('error', {
-                message: 'Could not Delete Item',
+                message: 'Could not delete item',
                 error: err
             });
         }
@@ -90,7 +88,6 @@ router.get('/delete/:_id', isLoggedIn, function(req, res, next) {
 
 /* GET /budgetManager/_id - Display the edit page and populates it with values */
 router.get('/:_id', isLoggedIn, function(req, res, next) {
-
     // Gets the ID from the URL
     var _id = req.params._id;
 
@@ -99,7 +96,7 @@ router.get('/:_id', isLoggedIn, function(req, res, next) {
         if (err) {
             console.log(err);
             res.render('error', {
-                message: 'Unable to load Item',
+                message: 'Unable to load item',
                 error: err
             });
         }
@@ -115,7 +112,6 @@ router.get('/:_id', isLoggedIn, function(req, res, next) {
 
 /* POST /budgetManager/_id - Processes form submission and updates the selected document */
 router.post('/:_id', isLoggedIn, function(req, res, next) {
-
     // Gets the ID from the URL
     var _id = req.params._id;
 

@@ -10,6 +10,10 @@ var passportLocalMongoose = require('passport-local-mongoose');
 
 var accountSchema = new mongoose.Schema({
     // Passport defines username and password automatically
+
+    // Required for Facebook login
+    oauthID: String,
+    created: Date
 });
 
 accountSchema.plugin(passportLocalMongoose);
