@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd014b81-1916-4119-882e-742d1667880a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/myStyle.css" afterPath="$PROJECT_DIR$/public/stylesheets/myStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.ejs" afterPath="$PROJECT_DIR$/views/partials/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/globalVariables.js" afterPath="$PROJECT_DIR$/config/globalVariables.js" />
     </list>
     <ignored path="assignment2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="globalVariables.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="globalVariables.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/globalVariables.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+            <state relative-caret-position="225">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -50,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myStyle.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myStyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/myStyle.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="309">
@@ -163,10 +160,10 @@
         <option value="$PROJECT_DIR$/views/login.ejs" />
         <option value="$PROJECT_DIR$/views/add-item.ejs" />
         <option value="$PROJECT_DIR$/views/edit-item.ejs" />
-        <option value="$PROJECT_DIR$/config/globalVariables.js" />
         <option value="$PROJECT_DIR$/views/partials/header.ejs" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/myStyle.css" />
+        <option value="$PROJECT_DIR$/config/globalVariables.js" />
       </list>
     </option>
   </component>
@@ -446,12 +443,12 @@
       <workItem from="1479607166693" duration="10690000" />
       <workItem from="1480384392628" duration="17465000" />
       <workItem from="1480477227939" duration="4093000" />
-      <workItem from="1480583505979" duration="7342000" />
+      <workItem from="1480583505979" duration="7620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57372000" />
+    <option name="totallyTimeSpent" value="57650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="473" y="23" width="796" height="704" extended-state="0" />
@@ -644,16 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/globalVariables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -717,6 +704,16 @@
         <state relative-caret-position="309">
           <caret line="133" column="1" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/globalVariables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
