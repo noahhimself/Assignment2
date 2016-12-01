@@ -140,7 +140,10 @@ footer
     font-size: 120%;
 }
 
-
+.form-group
+{
+    line-height: 300%;
+}
 
 .usernameUl, .usernameLi
 {
