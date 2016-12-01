@@ -7,22 +7,22 @@
 <% include partials/header.ejs %>
 
 <h1>Register</h1>
-  <form method="post" id="registerForm">
-    <div class="form-group">
+<form method="post" id="registerForm">
+  <div class="form-group">
     <label class="lbl" for="username">Username:*</label>
     <input name="username" id="username" required />
-      </div>
-      <div class="form-group">
+  </div>
+  <div class="form-group">
     <label class="lbl" for="password">Password:*</label>
     <input name="password" id="password" type="password" required />
-    </div>
-    <div class="form-group">
+  </div>
+  <div class="form-group">
     <label class="lbl" for="confirm">Confirm:*</label>
     <input name="confirm" id="confirm" type="password" required />
-    </div>
-    <button class="registerButton">Register</button>
-    <hr /> <center>Already have an account?
+  </div>
+  <button class="registerButton">Register</button>
+  <hr /> <center>Already have an account?
     <a href="/login" title="Login">Login</a> </center>
-  </form>
+</form>
 
 <% include partials/footer.ejs %>

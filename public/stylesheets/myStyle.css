@@ -149,9 +149,9 @@ footer
 {
     position: fixed;
     top: 100px;
-    right:130px;
+    right: 130px;
     color: black;
-    background-color: white;
+    background-color: transparent;
 }
 
 .registerButton, .loginButton, .saveButton
