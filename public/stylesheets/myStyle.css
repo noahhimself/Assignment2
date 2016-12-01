@@ -32,7 +32,8 @@ h1
 
 .homeH1
 {
-    padding-top: 15%;
+    padding-top: 18%;
+    font-size: 400%;
 }
 
 h2
@@ -136,6 +137,18 @@ footer
 {
     width: 12%;
     float: left;
+    font-size: 120%;
+}
+
+
+
+.usernameUl, .usernameLi
+{
+    position: fixed;
+    top: 100px;
+    right:130px;
+    color: black;
+    background-color: white;
 }
 
 .registerButton, .loginButton, .saveButton
@@ -174,4 +187,13 @@ footer
     color: #990000;
     border: 1px solid #ffb3b3;
     border-radius: 8px;
+}
+
+.hm
+{
+    background-image: url("/images/budgetManagerImage.jpg");
+    background-size: 1000px 430px;
+    background-repeat: no-repeat;
+    padding-bottom: 14%;
+    color: ghostwhite;
 }
